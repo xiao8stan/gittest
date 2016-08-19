@@ -1,6 +1,5 @@
 ```
 {% if messages %}
-        <ul class="messages">
             {% for message in messages %}
                 <div class="alert alert-warning btn-warning">
                     <a class="close" data-dismiss="alert">×</a>
@@ -11,6 +10,5 @@
                 </div>
 
             {% endfor %}
-        </ul>
     {% endif %}
 ```
