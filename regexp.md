@@ -4,7 +4,7 @@
   ```
   url(r'^token/(?P<token>.+)',views.TokenLoginView.as_view(),name='token_login')
   ```
->2. 加密算法用的是Crypto
+>2. 加密算法用的是AES, 由于其中iv有要求,所以网上有人把他封装成了一个类,用起来很方面
 
  ```
   from Crypto import Random
