@@ -16,7 +16,9 @@ def get_task_list(max_results=0, keyword=''):
       if request.method == 'GET':
           keyword = request.GET['keyword']
       else:
-          pass
+          keyword = request.POST['keyword']
+          
       task_list = get_task_list(10, keyword)
+      
       return render(request, 'template.html', {'task_list': task_list}
 ```
