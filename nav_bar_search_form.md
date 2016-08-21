@@ -2,7 +2,7 @@
 ```
     <form class="navbar-form navbar-left" action="url" methos="post">
     <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search">
+    <input type="text" class="form-control" placeholder="Search" name="keyword">
     </div>
     <button type="submit" class="btn glyphicon glyphicon-search"></button>
     </form>
