@@ -1,7 +1,8 @@
   >1. pip的安装   不知道为什么物理机sudo apt-get install python-pip不能装pip，奇怪的是我的u虚拟机是可以用的。网上搜的解决w方案
       wget https://bootstrap.pypa.io/get-pip.py  --no-check-certificate
       sudo python get-pip.py
-      好像是多了一个sources.list源wd文件的问题
+      1）多了一个sources.list源wd文件的问题
+      2）sudo apt-get update更新一下源文件
   >2. 虚拟环境的安装，这个很简单 sudo pip install virtualenv不过用了这么久的虚拟环境才知道虚拟环境是可以定制的。比如说想py.test与flake8这样的
       基础包都是可以在生成虚拟环境的同时安装相应的包。可以定制virtualenv脚本
       1)首先授权sudo chown ubuntu:ubuntu 'which virtualenv'
